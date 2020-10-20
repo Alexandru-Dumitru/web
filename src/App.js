@@ -4,12 +4,12 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './components/navbar/navbar.component';
 import Home from './pages/home/home.page'
 import Projects from './pages/projects/projects.page'
-import CV from './pages/CV/CV.page'
+// import CV from './pages/CV/CV.page'
 import Footer from './components/footer/footer.component';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
        <Navbar />
        <Switch>
          <Route path='/' exact component={Home} />
