@@ -1,12 +1,11 @@
 import React from 'react';
-// import MainSection from '../components/mainSection/MainSection';
-// import Cards from '../components/Cards/Cards';
 import '../../App.css';
+import backgroundVideo from '../../videos/video-1.mp4';
 
 const Home = () => (
-    <>
-        {/* <MainSection /> */}
-    </>
+  <>
+    <video src={backgroundVideo} autoPlay loop muted />
+  </>
 );
 
 export default Home;

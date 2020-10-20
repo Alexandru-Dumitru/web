@@ -1,12 +1,15 @@
 import React from 'react';
-// import MainSection from '../components/mainSection/MainSection';
-// import Cards from '../components/Cards/Cards';
-import '../../App.css';
+
+import './cv.style.scss';
+import underConstruction from '../../images/under-construction.gif';
 
 const CV = () => (
-    <>
-        {/* <MainSection /> */}
-    </>
+  <>
+    <h1 className="under-construction">Under Construction</h1>
+    <div className="under-construction">
+      <img src={underConstruction} alt="Page under construction" />
+    </div>
+  </>
 );
 
 export default CV;

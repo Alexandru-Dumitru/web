@@ -4,7 +4,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './components/navbar/navbar.component';
 import Home from './pages/home/home.page'
 import Projects from './pages/projects/projects.page'
-// import CV from './pages/CV/CV.page'
+import Blog from './pages/blog/blog.page'
+import Calendar from './pages/calendar/calendar.page'
+import CV from './pages/cv/cv.page'
 import Footer from './components/footer/footer.component';
 function App() {
   return (
@@ -14,16 +16,9 @@ function App() {
        <Switch>
          <Route path='/' exact component={Home} />
          <Route path='/projects' exact component={Projects} />
-         <Route path='/cv' exact component={Projects} />
-         <Route path='/blog' component={() => { 
-     window.location.replace('https://medium.com/@dumitru.alex0');
-     return null; }} />
-         <Route path='/GitHub' component={() => { 
-     window.location.replace('https://github.com/dumitru-alex'); 
-     return null; }} />
-         <Route path='/LinkedIn' component={() => { 
-     window.location.replace('https://www.linkedin.com/in/alexandru-paul-dumitru'); 
-     return null; }} />
+         <Route path='/cv' exact component={CV} />
+         <Route path='/blog' exact component={Blog} />
+         <Route path='/calendar' exact component={Calendar} />
        </Switch>
        <Footer />
       </BrowserRouter>
